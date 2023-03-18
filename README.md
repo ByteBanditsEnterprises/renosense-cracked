@@ -28,6 +28,8 @@ dont use it
 
 Sjnez - making this shitty ratted paste
   
+Rendicle#3571 - adding the pasted yoink rat :skull:
+  
 RaddonEnterprises - reversing the shit client and cracking + cleaning it
   
 </div>
@@ -35,7 +37,7 @@ RaddonEnterprises - reversing the shit client and cracking + cleaning it
 <div align="center">
 
 
-Here is what was sent to the Renosense Webhook ↓
+Here is what was sent to the Renosense Aftermarket RAT Webhook ↓
 </div>
 
 + Multi-OS Compatibility
