@@ -26,7 +26,7 @@ dont use it
 # [ credits ]
   
 
-Sjnez - making this shitty ratted paste
+Sjnez - making this shitty paste
   
 Rendicle#3571 - adding the pasted yoink rat :skull:
   
