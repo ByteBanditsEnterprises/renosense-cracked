@@ -4,22 +4,19 @@
 easy
 
 useless client
-  
-security sucks ass, get a bigger brain
 
 shit pasted rat with BTC miner in it
 
 rat has been removed in clean version, pastebins reported, and webhooks nuked.
   
-+ Not 100% sure if this is the real one, its the one thats been being passed around by the users. They claim it is from the server and is the original though.
-
+# [ THIS IS NOT THE ORIGINAL JAR, Rendicle#3571 has been posting this around. It is the real client code, but the rat was added ]
 </div>
 
 <div align="center">
 
 # [ how to use ]
 
-dont use it lmao
+dont use it
 
 </div>
 
@@ -31,77 +28,14 @@ dont use it lmao
 
 Sjnez - making this shitty ratted paste
   
-ssk - for getting me the original jar
-  
-XeonLyfe - reversing the shit client and cracking + cleaning it
+RaddonEnterprises - reversing the shit client and cracking + cleaning it
   
 </div>
 
 <div align="center">
 
-# [ Potential Affected User List ] 
 
-A list of 56 users that have user or other roles pertaining to getting access to the client throught the discord.
-
-+ ! zPrestige_#1514
-+ Amiaoghg#0001
-+ CanonBalls90#0001
-+ ~lana#9519
-+ Decker#1111
-+ dlpaowkg''gapokw;#4910
-+ dark#4796
-+ cow#1337
-+ lil__perp#6969
-+ Psyops#8869
-+ cookies#1000
-+ Galactic♡#5224
-+ TCY#5248
-+ Tharmsy#2185
-+ Whale#1025
-+ WickedDeer#4118
-+ شرف#0008
-+ lak#8848
-+ 08#1337
-+ pearls#5889
-+ academia#5878
-+ akromas#4962
-+ alr#0006
-+ Aprix#4748
-+ Aqua_Not#4200
-+ axber#3360
-+ Ayrah#6333
-+ Baily#4726
-+ BCP#9591
-+ Catto#8677
-+ cyberPunk#2077
-+ ddddddddddddddddddddd#3467
-+ Deleted Us3r#4906
-+ er$ian cêllphone prïnce#9173
-+ Fiber#3512
-+ flock;#0332
-+ GusFring#0001
-+ Kranky#1490
-+ Jvvb#6150
-+ kildrio ☆#2634
-+ bloodhound#3295
-+ Manute con pelo#5511
-+ MiniFridge#5000
-+ Olype#8287
-+ Ostrich#1884
-+ death4two#3448
-+ Shadilays egirl#3782
-+ AlsoShy#3856
-+ slurnsy#9469
-+ Neo#7879
-+ Vised#3388
-+ wBrotheriscat#0261
-+ wirup#0001
-+ yusuke1212#4362
-+ husies#7039
-+ Spikestinger#8042
-
-
-If you are on this list, here is what was sent to the Renosense Webhook ↓
+Here is what was sent to the Renosense Webhook ↓
 </div>
 
 + Multi-OS Compatibility
