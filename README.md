@@ -5,7 +5,7 @@ easy
 
 useless client
   
-security sucks ass, samuel, get a bigger brain
+security sucks ass, get a bigger brain
 
 shit pasted rat with BTC miner in it
 
