@@ -1,0 +1,30 @@
+//Raddon On Top!
+
+package com.sun.jna.platform.win32.COM;
+
+import com.sun.jna.ptr.*;
+import com.sun.jna.platform.win32.*;
+import com.sun.jna.*;
+
+public interface ITypeLib extends IUnknown
+{
+    WinDef.UINT GetTypeInfoCount();
+    
+    WinNT.HRESULT GetTypeInfo(final WinDef.UINT p0, final PointerByReference p1);
+    
+    WinNT.HRESULT GetTypeInfoType(final WinDef.UINT p0, final OaIdl.TYPEKIND.ByReference p1);
+    
+    WinNT.HRESULT GetTypeInfoOfGuid(final Guid.GUID p0, final PointerByReference p1);
+    
+    WinNT.HRESULT GetLibAttr(final PointerByReference p0);
+    
+    WinNT.HRESULT GetTypeComp(final PointerByReference p0);
+    
+    WinNT.HRESULT GetDocumentation(final int p0, final WTypes.BSTRByReference p1, final WTypes.BSTRByReference p2, final WinDef.DWORDByReference p3, final WTypes.BSTRByReference p4);
+    
+    WinNT.HRESULT IsName(final WTypes.LPOLESTR p0, final WinDef.ULONG p1, final WinDef.BOOLByReference p2);
+    
+    WinNT.HRESULT FindName(final WTypes.LPOLESTR p0, final WinDef.ULONG p1, final Pointer[] p2, final OaIdl.MEMBERID[] p3, final WinDef.USHORTByReference p4);
+    
+    void ReleaseTLibAttr(final OaIdl.TLIBATTR p0);
+}

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+TweakOrder: 0
+MixinConfigs: mixins.renosense.json
+FMLCorePluginContainsFMLMod: true
+FMLAT: renosense_at.cfg
+tweakClass: org.spongepowered.asm.launch.MixinTweaker
+ForceLoadAsMod: true
+FMLCorePlugin: me.sjnez.renosense.mixin.RenoSenseLoader
+

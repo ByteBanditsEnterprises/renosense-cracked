@@ -1,0 +1,4679 @@
+{
+  "club/minnced/discord/rpc/DiscordEventHandlers$OnGameUpdate": {
+    "name": "club/minnced/discord/rpc/DiscordEventHandlers$OnGameUpdate",
+    "interfaces": [
+      "com/sun/jna/Callback"
+    ]
+  },
+  "club/minnced/discord/rpc/DiscordEventHandlers$OnJoinRequest": {
+    "name": "club/minnced/discord/rpc/DiscordEventHandlers$OnJoinRequest",
+    "interfaces": [
+      "com/sun/jna/Callback"
+    ]
+  },
+  "club/minnced/discord/rpc/DiscordEventHandlers$OnReady": {
+    "name": "club/minnced/discord/rpc/DiscordEventHandlers$OnReady",
+    "interfaces": [
+      "com/sun/jna/Callback"
+    ]
+  },
+  "club/minnced/discord/rpc/DiscordEventHandlers$OnStatus": {
+    "name": "club/minnced/discord/rpc/DiscordEventHandlers$OnStatus",
+    "interfaces": [
+      "com/sun/jna/Callback"
+    ]
+  },
+  "club/minnced/discord/rpc/DiscordRPC": {
+    "name": "club/minnced/discord/rpc/DiscordRPC",
+    "interfaces": [
+      "com/sun/jna/Library"
+    ]
+  },
+  "me/sjnez/renosense/DiscordPresence": {
+    "name": "me/sjnez/renosense/DiscordPresence",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/RenoSense": {
+    "name": "me/sjnez/renosense/RenoSense",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "me/sjnez/renosense/RenoSense",
+        "values": {
+          "modid": {
+            "value": "renosense"
+          },
+          "name": {
+            "value": "RenoSense"
+          },
+          "version": {
+            "value": "0.0.7"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "INSTANCE"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/BlockEvent": {
+    "name": "me/sjnez/renosense/event/events/BlockEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/BlockEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/ChatEvent": {
+    "name": "me/sjnez/renosense/event/events/ChatEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/ChatEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/ClientEvent": {
+    "name": "me/sjnez/renosense/event/events/ClientEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/ClientEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/InterpolateEvent": {
+    "name": "me/sjnez/renosense/event/events/InterpolateEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/InterpolateEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/MoveEvent": {
+    "name": "me/sjnez/renosense/event/events/MoveEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/MoveEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/Packet": {
+    "name": "me/sjnez/renosense/event/events/Packet",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/Packet"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/PacketEvent$Receive": {
+    "name": "me/sjnez/renosense/event/events/PacketEvent$Receive",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/PacketEvent$Receive"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/PacketEvent$Send": {
+    "name": "me/sjnez/renosense/event/events/PacketEvent$Send",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/PacketEvent$Send"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/ProcessRightClickBlockEvent": {
+    "name": "me/sjnez/renosense/event/events/ProcessRightClickBlockEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/ProcessRightClickBlockEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/PushEvent": {
+    "name": "me/sjnez/renosense/event/events/PushEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/PushEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/event/events/StepEvent": {
+    "name": "me/sjnez/renosense/event/events/StepEvent",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/Cancelable;",
+        "target": "me/sjnez/renosense/event/events/StepEvent"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/Feature": {
+    "name": "me/sjnez/renosense/features/Feature",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/features/gui/alt/AltButton": {
+    "name": "me/sjnez/renosense/features/gui/alt/AltButton",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/features/gui/alt/AltGui": {
+    "name": "me/sjnez/renosense/features/gui/alt/AltGui",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/features/gui/menu/LoadingScreen": {
+    "name": "me/sjnez/renosense/features/gui/menu/LoadingScreen",
+    "interfaces": [
+      "net/minecraft/client/gui/GuiYesNoCallback"
+    ]
+  },
+  "me/sjnez/renosense/features/modules/client/FontMod": {
+    "name": "me/sjnez/renosense/features/modules/client/FontMod",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onSettingChange(Lme/sjnez/renosense/event/events/ClientEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/client/HUD": {
+    "name": "me/sjnez/renosense/features/modules/client/HUD",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onUpdateWalkingPlayer(Lnet/minecraftforge/event/entity/player/AttackEntityEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onSettingChange(Lme/sjnez/renosense/event/events/ClientEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/AutoCrystal": {
+    "name": "me/sjnez/renosense/features/modules/combat/AutoCrystal",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onSoundPacket(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/HIGH"
+          },
+          "receiveCanceled": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/HIGHEST"
+          },
+          "receiveCanceled": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/Autototem": {
+    "name": "me/sjnez/renosense/features/modules/combat/Autototem",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onUpdateWalkingPlayer(Lme/sjnez/renosense/event/events/ProcessRightClickBlockEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/ChorusPredict": {
+    "name": "me/sjnez/renosense/features/modules/combat/ChorusPredict",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/Criticals": {
+    "name": "me/sjnez/renosense/features/modules/combat/Criticals",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/EntityPredict": {
+    "name": "me/sjnez/renosense/features/modules/combat/EntityPredict",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPlayerDeath(Lme/sjnez/renosense/event/events/DeathEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/HoleFiller": {
+    "name": "me/sjnez/renosense/features/modules/combat/HoleFiller",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/combat/Killaura": {
+    "name": "me/sjnez/renosense/features/modules/combat/Killaura",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onUpdateWalkingPlayerEvent(Lme/sjnez/renosense/event/events/UpdateWalkingPlayerEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/misc/ChatModifier": {
+    "name": "me/sjnez/renosense/features/modules/misc/ChatModifier",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/misc/CoordNotifier": {
+    "name": "me/sjnez/renosense/features/modules/misc/CoordNotifier",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/misc/NoHandShake": {
+    "name": "me/sjnez/renosense/features/modules/misc/NoHandShake",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/misc/ToolTips": {
+    "name": "me/sjnez/renosense/features/modules/misc/ToolTips",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "makeTooltip(Lnet/minecraftforge/event/entity/player/ItemTooltipEvent;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/HIGHEST"
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/misc/Tracker": {
+    "name": "me/sjnez/renosense/features/modules/misc/Tracker",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onDeath(Lme/sjnez/renosense/event/events/DeathEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/movement/NoSlow": {
+    "name": "me/sjnez/renosense/features/modules/movement/NoSlow",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceived(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onInput(Lnet/minecraftforge/client/event/InputUpdateEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/player/NoGlitchBlocks": {
+    "name": "me/sjnez/renosense/features/modules/player/NoGlitchBlocks",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onBreak(Lnet/minecraftforge/event/world/BlockEvent$BreakEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/player/PacketMine": {
+    "name": "me/sjnez/renosense/features/modules/player/PacketMine",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onBlockEvent(Lme/sjnez/renosense/event/events/BlockEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/Aspect": {
+    "name": "me/sjnez/renosense/features/modules/render/Aspect",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPerspectiveEvent(Lme/sjnez/renosense/event/events/PerspectiveEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/Chams": {
+    "name": "me/sjnez/renosense/features/modules/render/Chams",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onInterpolate(Lme/sjnez/renosense/event/events/InterpolateEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onRenderPlayerEvent(Lnet/minecraftforge/client/event/RenderPlayerEvent$Pre;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/Fullbright": {
+    "name": "me/sjnez/renosense/features/modules/render/Fullbright",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/NoRender": {
+    "name": "me/sjnez/renosense/features/modules/render/NoRender",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "fog_density(Lnet/minecraftforge/client/event/EntityViewRenderEvent$FogDensity;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/SkyColor": {
+    "name": "me/sjnez/renosense/features/modules/render/SkyColor",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "fogColors(Lnet/minecraftforge/client/event/EntityViewRenderEvent$FogColors;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "fog_density(Lnet/minecraftforge/client/event/EntityViewRenderEvent$FogDensity;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/Swing": {
+    "name": "me/sjnez/renosense/features/modules/render/Swing",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacket(Lme/sjnez/renosense/event/events/Packet;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/features/modules/render/Trails": {
+    "name": "me/sjnez/renosense/features/modules/render/Trails",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onRender3D(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/manager/ConfigManager": {
+    "name": "me/sjnez/renosense/manager/ConfigManager",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/manager/EventManager": {
+    "name": "me/sjnez/renosense/manager/EventManager",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onUpdate(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "initGuiEvent(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onClientConnect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientConnectedToServerEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onClientDisconnect(Lnet/minecraftforge/fml/common/network/FMLNetworkEvent$ClientDisconnectionFromServerEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onUpdateWalkingPlayer(Lme/sjnez/renosense/event/events/UpdateWalkingPlayerEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketReceive(Lme/sjnez/renosense/event/events/PacketEvent$Receive;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onWorldRender(Lnet/minecraftforge/client/event/RenderWorldLastEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "renderHUD(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onRenderGameOverlayEvent(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Text;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/LOW"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/NORMAL"
+          },
+          "receiveCanceled": {
+            "type": "BOOL",
+            "value": "true"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onChatSent(Lnet/minecraftforge/client/event/ClientChatEvent;)V",
+        "values": {
+          "priority": {
+            "type": "ENUM",
+            "value": "Lnet/minecraftforge/fml/common/eventhandler/EventPriority;/HIGHEST"
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/manager/InventoryManager": {
+    "name": "me/sjnez/renosense/manager/InventoryManager",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/manager/ReloadManager": {
+    "name": "me/sjnez/renosense/manager/ReloadManager",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "onPacketSend(Lme/sjnez/renosense/event/events/PacketEvent$Send;)V"
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/RenoSenseLoader": {
+    "name": "me/sjnez/renosense/mixin/RenoSenseLoader",
+    "interfaces": [
+      "net/minecraftforge/fml/relauncher/IFMLLoadingPlugin"
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/IEntityRenderer": {
+    "name": "me/sjnez/renosense/mixin/mixins/IEntityRenderer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/IEntityRenderer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/renderer/EntityRenderer;"
+          ]
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/gen/Invoker;",
+        "target": "setupCameraTransformInvoker(FI)V",
+        "value": {
+          "value": "setupCameraTransform"
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/IFontRenderer": {
+    "name": "me/sjnez/renosense/mixin/mixins/IFontRenderer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/IFontRenderer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/FontRenderer;"
+          ]
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/gen/Invoker;",
+        "target": "invokeRenderSplitString(Ljava/lang/String;IIIZ)V",
+        "value": {
+          "value": "renderSplitString"
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/IMinecraft": {
+    "name": "me/sjnez/renosense/mixin/mixins/IMinecraft",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/IMinecraft",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/Minecraft;"
+          ]
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/gen/Accessor;",
+        "target": "setSession(Lnet/minecraft/util/Session;)V",
+        "value": {
+          "value": "session"
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinAbstractClientPlayer": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinAbstractClientPlayer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinAbstractClientPlayer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/entity/AbstractClientPlayer;"
+          ]
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_175155_b()Lnet/minecraft/client/network/NetworkPlayerInfo;"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 64,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "getLocationSkin(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "64"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "getLocationSkin()Lnet/minecraft/util/ResourceLocation;"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 65,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "getLocationCape(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "65"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "getLocationCape"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinDefaultPlayerSkin": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinDefaultPlayerSkin",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinDefaultPlayerSkin",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/resources/DefaultPlayerSkin;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 66,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "getSkinType(Ljava/util/UUID;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "66"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "getSkinType"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinEntity": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinEntity",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinEntity",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/entity/Entity;"
+          ]
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70165_t"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70163_u"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70161_v"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70159_w"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70181_x"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70179_y"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70177_z"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70125_A"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70122_E"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70145_X"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70141_P"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70170_p"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_191505_aI"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Final;",
+        "target": "field_191505_aI"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_191506_aJ"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70134_J"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70138_W"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70123_F"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70124_G"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70132_H"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70140_Q"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_82151_R"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_190534_ay"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70150_b"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_191959_ay"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_70146_Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70051_ag()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_184218_aH()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70093_af()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_174826_a(Lnet/minecraft/util/math/AxisAlignedBB;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_174813_aQ()Lnet/minecraft/util/math/AxisAlignedBB;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_174829_m()V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_184231_a(DZLnet/minecraft/block/state/IBlockState;Lnet/minecraft/util/math/BlockPos;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70041_e_()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70090_H()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_184207_aI()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_184179_bs()Lnet/minecraft/entity/Entity;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_184185_a(Lnet/minecraft/util/SoundEvent;FF)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_145775_I()V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70026_G()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_180429_a(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/Block;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_184184_Z()Lnet/minecraft/util/SoundEvent;"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_191954_d(F)F"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_191957_ae()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_85029_a(Lnet/minecraft/crash/CrashReportCategory;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70081_e(I)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70015_d(I)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_190531_bD()I"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_70027_ad()Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_82145_z()I"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 67,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/entity/Entity;addVelocity(DDD)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "addVelocityHook(Lnet/minecraft/entity/Entity;DDD)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "67"
+          },
+          "method": {
+            "values": [
+              "applyEntityCollision"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 68,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "canRenderOnFireHook(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "68"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "canRenderOnFire"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinEntityLivingBase": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinEntityLivingBase",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinEntityLivingBase",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/entity/EntityLivingBase;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 69,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "getArmSwingAnimationEnd(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "69"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "getArmSwingAnimationEnd"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinEntityPlayerSP": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinEntityPlayerSP",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinEntityPlayerSP",
+        "values": {
+          "priority": {
+            "type": "INT",
+            "value": "9998"
+          },
+          "value": {
+            "type": "CLASS",
+            "values": [
+              "Lnet/minecraft/client/entity/EntityPlayerSP;"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 70,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "sendChatMessage(Ljava/lang/String;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "70"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "sendChatMessage"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 71,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "preMotion(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "71"
+            ]
+          },
+          "method": {
+            "values": [
+              "onUpdateWalkingPlayer"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 72,
+        "value": {
+          "value": "RETURN"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "postMotion(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "72"
+            ]
+          },
+          "method": {
+            "values": [
+              "onUpdateWalkingPlayer"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinEntityRenderer": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinEntityRenderer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinEntityRenderer",
+        "values": {
+          "priority": {
+            "type": "INT",
+            "value": "1001"
+          },
+          "value": {
+            "type": "CLASS",
+            "values": [
+              "Lnet/minecraft/client/renderer/EntityRenderer;"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 73,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "updateLightmap(FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "73"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "updateLightmap"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 74,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "hurtCameraEffect(FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "74"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "hurtCameraEffect"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 75,
+        "values": {
+          "target": {
+            "value": "Lorg/lwjgl/util/glu/Project;gluPerspective(FFFF)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "onSetupCameraTransform(FFFF)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "75"
+          },
+          "method": {
+            "values": [
+              "setupCameraTransform"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 76,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderHand(FILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "76"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderHand"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 77,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/multiplayer/WorldClient;getEntitiesInAABBexcluding(Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "getEntitiesInAABBexcludingHook(Lnet/minecraft/client/multiplayer/WorldClient;Lnet/minecraft/entity/Entity;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "77"
+          },
+          "method": {
+            "values": [
+              "getMouseOver"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 78,
+        "values": {
+          "target": {
+            "value": "Lorg/lwjgl/util/glu/Project;gluPerspective(FFFF)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "onRenderWorldPass(FFFF)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "78"
+          },
+          "method": {
+            "values": [
+              "renderWorldPass"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 79,
+        "values": {
+          "target": {
+            "value": "Lorg/lwjgl/util/glu/Project;gluPerspective(FFFF)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "onRenderCloudsCheck(FFFF)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "79"
+          },
+          "method": {
+            "values": [
+              "renderCloudsCheck"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinFMLClientHandler": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinFMLClientHandler",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinFMLClientHandler",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraftforge/fml/client/FMLClientHandler;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 80,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraftforge/fml/client/SplashProgress;start()V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "startScreen(Lnet/minecraft/client/Minecraft;Ljava/util/List;Lnet/minecraft/client/resources/IReloadableResourceManager;Lnet/minecraft/client/resources/data/MetadataSerializer;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "80"
+          },
+          "method": {
+            "values": [
+              "beginMinecraftLoading"
+            ]
+          },
+          "remap": {
+            "type": "BOOL",
+            "value": "false"
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 81,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraftforge/fml/client/SplashProgress;finish()V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "closeScreen(Ljava/lang/String;Ljava/lang/Throwable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "81"
+          },
+          "method": {
+            "values": [
+              "haltGame"
+            ]
+          },
+          "remap": {
+            "type": "BOOL",
+            "value": "false"
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 82,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraftforge/fml/client/SplashProgress;finish()V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "closeScreenI()V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "82"
+          },
+          "method": {
+            "values": [
+              "finishMinecraftLoading"
+            ]
+          },
+          "remap": {
+            "type": "BOOL",
+            "value": "false"
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinFontRenderer": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinFontRenderer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinFontRenderer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/FontRenderer;"
+          ]
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_180455_b(Ljava/lang/String;FFIZ)I"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_78255_a(Ljava/lang/String;Z)V"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 83,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/gui/FontRenderer;renderStringAtPos(Ljava/lang/String;Z)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "renderStringAtPosHook(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;Z)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "83"
+          },
+          "method": {
+            "values": [
+              "renderString(Ljava/lang/String;FFIZ)I"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiConnecting": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiConnecting",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiConnecting",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/multiplayer/GuiConnecting;"
+          ]
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_146373_h"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_146371_g"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_146374_i"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Final;",
+        "target": "field_146374_i"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 84,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "drawScreen(IIFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "84"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "drawScreen"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 85,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "keyTyped(CILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "85"
+            ]
+          },
+          "method": {
+            "values": [
+              "keyTyped"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiDownloadTerrain": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiDownloadTerrain",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiDownloadTerrain",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/GuiDownloadTerrain;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 86,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "drawScreen(IIFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "86"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "drawScreen"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiInGameMenu": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiInGameMenu",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiInGameMenu",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/GuiIngameMenu;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 87,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "actionPerformed(Lnet/minecraft/client/gui/GuiButton;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "87"
+            ]
+          },
+          "method": {
+            "values": [
+              "actionPerformed"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiMainMenu": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiMainMenu",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiMainMenu",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/GuiMainMenu;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 88,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "actionPerformed(Lnet/minecraft/client/gui/GuiButton;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "88"
+            ]
+          },
+          "method": {
+            "values": [
+              "actionPerformed"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 89,
+        "value": {
+          "value": "RETURN"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "drawScreen(IIFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "89"
+            ]
+          },
+          "method": {
+            "values": [
+              "drawScreen"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 90,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "keyTyped(CILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "90"
+            ]
+          },
+          "method": {
+            "values": [
+              "keyTyped"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 91,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "mouseClicked(IIILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "91"
+            ]
+          },
+          "method": {
+            "values": [
+              "mouseClicked"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiNewChat": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiNewChat",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiNewChat",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/GuiNewChat;"
+          ]
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_146253_i"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Final;",
+        "target": "field_146253_i"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 92,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/gui/GuiNewChat;drawRect(IIIII)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "drawRectHook(IIIII)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "92"
+          },
+          "method": {
+            "values": [
+              "drawChat"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 93,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/gui/FontRenderer;drawStringWithShadow(Ljava/lang/String;FFI)I"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "drawStringWithShadow(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;FFI)I",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "93"
+          },
+          "method": {
+            "values": [
+              "drawChat"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 94,
+        "values": {
+          "ordinal": {
+            "type": "INT",
+            "value": "0"
+          },
+          "remap": {
+            "type": "BOOL",
+            "value": "false"
+          },
+          "target": {
+            "value": "Ljava/util/List;size()I"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "drawnChatLinesSize(Ljava/util/List;)I",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "94"
+          },
+          "method": {
+            "values": [
+              "setChatLine"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 95,
+        "values": {
+          "ordinal": {
+            "type": "INT",
+            "value": "2"
+          },
+          "remap": {
+            "type": "BOOL",
+            "value": "false"
+          },
+          "target": {
+            "value": "Ljava/util/List;size()I"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "chatLinesSize(Ljava/util/List;)I",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "95"
+          },
+          "method": {
+            "values": [
+              "setChatLine"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiPlayerTabOverlay": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiPlayerTabOverlay",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiPlayerTabOverlay",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/GuiPlayerTabOverlay;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 96,
+        "values": {
+          "target": {
+            "value": "Ljava/util/List;subList(II)Ljava/util/List;"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "subListHook(Ljava/util/List;II)Ljava/util/List;",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "96"
+          },
+          "method": {
+            "values": [
+              "renderPlayerlist"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 97,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "getPlayerNameHook(Lnet/minecraft/client/network/NetworkPlayerInfo;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "97"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "getPlayerName"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiScreen": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiScreen",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiScreen",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/GuiScreen;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 98,
+        "value": {
+          "value": "RETURN"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "drawBackground(ILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "98"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "drawBackground"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 99,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "onGuiClosed(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "99"
+            ]
+          },
+          "method": {
+            "values": [
+              "onGuiClosed"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 100,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderToolTipHook(Lnet/minecraft/item/ItemStack;IILorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "100"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderToolTip"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinGuiToast": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinGuiToast",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinGuiToast",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/gui/toasts/GuiToast;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 101,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "drawToastHook(Lnet/minecraft/client/gui/ScaledResolution;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "101"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "drawToast"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinItemRenderer": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinItemRenderer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinItemRenderer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/renderer/ItemRenderer;"
+          ]
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_78455_a"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Final;",
+        "target": "field_78455_a"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_187457_a(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLnet/minecraft/util/EnumHand;FLnet/minecraft/item/ItemStack;F)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_187456_a(FFLnet/minecraft/util/EnumHandSide;)V"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 102,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderItemInFirstPersonHook(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLnet/minecraft/util/EnumHand;FLnet/minecraft/item/ItemStack;FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "102"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderItemInFirstPerson(Lnet/minecraft/client/entity/AbstractClientPlayer;FFLnet/minecraft/util/EnumHand;FLnet/minecraft/item/ItemStack;F)V"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 103,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderFireInFirstPersonHook(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "103"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderFireInFirstPerson"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 104,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderSuffocationOverlay(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "104"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderSuffocationOverlay"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 105,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderItemSide(Lnet/minecraft/entity/EntityLivingBase;Lnet/minecraft/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemCameraTransforms$TransformType;ZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "105"
+            ]
+          },
+          "method": {
+            "values": [
+              "renderItemSide"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinItemStack": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinItemStack",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinItemStack",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/item/ItemStack;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 106,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "hasEffect(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "106"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "hasEffect"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinLayerArmorBase": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinLayerArmorBase",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinLayerArmorBase",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/renderer/entity/layers/LayerArmorBase;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 107,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "doRenderLayer(Lnet/minecraft/entity/EntityLivingBase;FFFFFFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "107"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "doRenderLayer"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 108,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderArmorLayer(Lnet/minecraft/entity/EntityLivingBase;FFFFFFFLnet/minecraft/inventory/EntityEquipmentSlot;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "108"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderArmorLayer"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinMinecraft": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinMinecraft",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinMinecraft",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/Minecraft;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 109,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "runGameLoop(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "109"
+            ]
+          },
+          "method": {
+            "values": [
+              "runGameLoop"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 110,
+        "values": {
+          "ordinal": {
+            "type": "INT",
+            "value": "0"
+          },
+          "remap": {
+            "type": "BOOL",
+            "value": "false"
+          },
+          "shift": {
+            "type": "ENUM",
+            "value": "Lorg/spongepowered/asm/mixin/injection/At$Shift;/BEFORE"
+          },
+          "target": {
+            "value": "Lorg/lwjgl/input/Keyboard;getEventKey()I"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "onKeyboard(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "110"
+            ]
+          },
+          "method": {
+            "values": [
+              "runTickKeyboard"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinNetHandlerPlayServer": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinNetHandlerPlayServer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinNetHandlerPlayServer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/network/NetHandlerPlayServer;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 111,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/network/NetHandlerPlayServer;disconnect(Lnet/minecraft/util/text/ITextComponent;)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "processUseEntity(Lnet/minecraft/network/play/client/CPacketUseEntity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "111"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "processUseEntity"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinNetworkManager": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinNetworkManager",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinNetworkManager",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/network/NetworkManager;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 112,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "onSendPacketPre(Lnet/minecraft/network/Packet;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "112"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "sendPacket(Lnet/minecraft/network/Packet;)V"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 113,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "onChannelReadPre(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/Packet;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "113"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "channelRead0"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinNetworkPlayerInfo": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinNetworkPlayerInfo",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinNetworkPlayerInfo",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/network/NetworkPlayerInfo;"
+          ]
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_178845_a()Lcom/mojang/authlib/GameProfile;"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 114,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "getLocationSkin(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "114"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "getLocationSkin"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinPlayerControllerMP": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinPlayerControllerMP",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinPlayerControllerMP",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/multiplayer/PlayerControllerMP;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 115,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/block/state/IBlockState;getPlayerRelativeBlockHardness(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "getPlayerRelativeBlockHardnessHook(Lnet/minecraft/block/state/IBlockState;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;)F",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "115"
+          },
+          "method": {
+            "values": [
+              "onPlayerDamageBlock"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 116,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "clickBlockHook(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumFacing;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "116"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "clickBlock"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 117,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "onPlayerDamageBlockHook(Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumFacing;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "117"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "onPlayerDamageBlock"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 118,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "processRightClickBlock(Lnet/minecraft/client/entity/EntityPlayerSP;Lnet/minecraft/client/multiplayer/WorldClient;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/util/EnumFacing;Lnet/minecraft/util/math/Vec3d;Lnet/minecraft/util/EnumHand;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "118"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "processRightClickBlock"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinRenderLivingBase": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinRenderLivingBase",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinRenderLivingBase",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/renderer/entity/RenderLivingBase;"
+          ]
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_147923_a"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_77045_g"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "field_188323_j"
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 119,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "doRender(Lnet/minecraft/entity/EntityLivingBase;DDDFFLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "119"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "doRender"
+            ]
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_193115_c(Lnet/minecraft/entity/EntityLivingBase;)Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_77040_d(Lnet/minecraft/entity/EntityLivingBase;F)F"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_77034_a(FFF)F"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_77044_a(Lnet/minecraft/entity/EntityLivingBase;F)F"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_77043_a(Lnet/minecraft/entity/EntityLivingBase;FFF)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_188322_c(Lnet/minecraft/entity/EntityLivingBase;F)F"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_180565_e()V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_177088_c(Lnet/minecraft/entity/EntityLivingBase;)Z"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_77039_a(Lnet/minecraft/entity/EntityLivingBase;DDD)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_177091_f()V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_77036_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFF)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_177093_a(Lnet/minecraft/entity/EntityLivingBase;FFFFFFF)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/Shadow;",
+        "target": "func_177090_c(Lnet/minecraft/entity/EntityLivingBase;F)Z"
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinRenderManager": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinRenderManager",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ],
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinRenderManager",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/renderer/entity/RenderManager;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 120,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderEntityStatic(Lnet/minecraft/entity/Entity;FZLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "120"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderEntityStatic"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 121,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/renderer/entity/RenderManager;renderEntity(Lnet/minecraft/entity/Entity;DDDFFZ)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+        "target": "renderEntityStaticX(D)D",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "121"
+          },
+          "index": {
+            "type": "INT",
+            "value": "1"
+          },
+          "method": {
+            "values": [
+              "renderEntityStatic"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 122,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/renderer/entity/RenderManager;renderEntity(Lnet/minecraft/entity/Entity;DDDFFZ)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+        "target": "renderEntityStaticY(D)D",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "122"
+          },
+          "index": {
+            "type": "INT",
+            "value": "2"
+          },
+          "method": {
+            "values": [
+              "renderEntityStatic"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 123,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/client/renderer/entity/RenderManager;renderEntity(Lnet/minecraft/entity/Entity;DDDFFZ)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/ModifyArg;",
+        "target": "renderEntityStaticZ(D)D",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "123"
+          },
+          "index": {
+            "type": "INT",
+            "value": "3"
+          },
+          "method": {
+            "values": [
+              "renderEntityStatic"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinRenderPlayer": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinRenderPlayer",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinRenderPlayer",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/client/renderer/entity/RenderPlayer;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 124,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "renderEntityNameHook(Lnet/minecraft/client/entity/AbstractClientPlayer;DDDLjava/lang/String;DLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "124"
+            ]
+          },
+          "cancellable": {
+            "type": "BOOL",
+            "value": "true"
+          },
+          "method": {
+            "values": [
+              "renderEntityName"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/mixin/mixins/MixinWorld": {
+    "name": "me/sjnez/renosense/mixin/mixins/MixinWorld",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/Mixin;",
+        "target": "me/sjnez/renosense/mixin/mixins/MixinWorld",
+        "value": {
+          "type": "CLASS",
+          "values": [
+            "Lnet/minecraft/world/World;"
+          ]
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 125,
+        "values": {
+          "target": {
+            "value": "Lnet/minecraft/world/chunk/Chunk;getEntitiesOfTypeWithinAABB(Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;Ljava/util/List;Lcom/google/common/base/Predicate;)V"
+          },
+          "value": {
+            "value": "INVOKE"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Redirect;",
+        "target": "getEntitiesOfTypeWithinAABBHook(Lnet/minecraft/world/chunk/Chunk;Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;Ljava/util/List;Lcom/google/common/base/Predicate;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "value": "125"
+          },
+          "method": {
+            "values": [
+              "getEntitiesWithinAABB(Ljava/lang/Class;Lnet/minecraft/util/math/AxisAlignedBB;Lcom/google/common/base/Predicate;)Ljava/util/List;"
+            ]
+          }
+        }
+      },
+      {
+        "type": "SUBTYPE",
+        "name": "Lorg/spongepowered/asm/mixin/injection/At;",
+        "id": 126,
+        "value": {
+          "value": "HEAD"
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lorg/spongepowered/asm/mixin/injection/Inject;",
+        "target": "onEntityAdded(Lnet/minecraft/entity/Entity;Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V",
+        "values": {
+          "at": {
+            "type": "ANNOTATION",
+            "values": [
+              "126"
+            ]
+          },
+          "method": {
+            "values": [
+              "onEntityAdded"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "me/sjnez/renosense/util/BlockUtil": {
+    "name": "me/sjnez/renosense/util/BlockUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/BurrowUtil": {
+    "name": "me/sjnez/renosense/util/BurrowUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/CustomSplashProgress$1": {
+    "name": "me/sjnez/renosense/util/CustomSplashProgress$1",
+    "interfaces": [
+      "net/minecraftforge/fml/common/ICrashCallable"
+    ]
+  },
+  "me/sjnez/renosense/util/CustomSplashProgress$2": {
+    "name": "me/sjnez/renosense/util/CustomSplashProgress$2",
+    "interfaces": [
+      "java/lang/Runnable"
+    ]
+  },
+  "me/sjnez/renosense/util/CustomSplashProgress$3": {
+    "name": "me/sjnez/renosense/util/CustomSplashProgress$3",
+    "interfaces": [
+      "java/lang/Thread$UncaughtExceptionHandler"
+    ]
+  },
+  "me/sjnez/renosense/util/DamageUtil": {
+    "name": "me/sjnez/renosense/util/DamageUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/EntityUtil": {
+    "name": "me/sjnez/renosense/util/EntityUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/InventoryUtil": {
+    "name": "me/sjnez/renosense/util/InventoryUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/MathUtil": {
+    "name": "me/sjnez/renosense/util/MathUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/PlayerUtil": {
+    "name": "me/sjnez/renosense/util/PlayerUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/PlayerUtil$lookUpName": {
+    "name": "me/sjnez/renosense/util/PlayerUtil$lookUpName",
+    "interfaces": [
+      "java/lang/Runnable"
+    ]
+  },
+  "me/sjnez/renosense/util/PlayerUtil$lookUpUUID": {
+    "name": "me/sjnez/renosense/util/PlayerUtil$lookUpUUID",
+    "interfaces": [
+      "java/lang/Runnable"
+    ]
+  },
+  "me/sjnez/renosense/util/RenderUtil": {
+    "name": "me/sjnez/renosense/util/RenderUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/RotationUtil": {
+    "name": "me/sjnez/renosense/util/RotationUtil",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/Shader": {
+    "name": "me/sjnez/renosense/util/Shader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/DarkMatterShader": {
+    "name": "me/sjnez/renosense/util/shaders/DarkMatterShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/GradientShader": {
+    "name": "me/sjnez/renosense/util/shaders/GradientShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/HypnoShader": {
+    "name": "me/sjnez/renosense/util/shaders/HypnoShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/PhantomStarShader": {
+    "name": "me/sjnez/renosense/util/shaders/PhantomStarShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/PinkLemonadeShader": {
+    "name": "me/sjnez/renosense/util/shaders/PinkLemonadeShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/ScottShader": {
+    "name": "me/sjnez/renosense/util/shaders/ScottShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/StarShader": {
+    "name": "me/sjnez/renosense/util/shaders/StarShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/sjnez/renosense/util/shaders/VortexShader": {
+    "name": "me/sjnez/renosense/util/shaders/VortexShader",
+    "interfaces": [
+      "me/sjnez/renosense/util/Util"
+    ]
+  },
+  "me/zero/alpine/bus/EventManager": {
+    "name": "me/zero/alpine/bus/EventManager",
+    "interfaces": [
+      "me/zero/alpine/bus/EventBus"
+    ]
+  },
+  "me/zero/alpine/bus/type/AttachableEventBus": {
+    "name": "me/zero/alpine/bus/type/AttachableEventBus",
+    "interfaces": [
+      "me/zero/alpine/bus/EventBus"
+    ]
+  },
+  "me/zero/alpine/bus/type/AttachableEventManager": {
+    "name": "me/zero/alpine/bus/type/AttachableEventManager",
+    "interfaces": [
+      "me/zero/alpine/bus/type/AttachableEventBus"
+    ]
+  },
+  "me/zero/alpine/event/type/Cancellable": {
+    "name": "me/zero/alpine/event/type/Cancellable",
+    "interfaces": [
+      "me/zero/alpine/event/type/ICancellable"
+    ]
+  },
+  "me/zero/alpine/listener/EventHandler": {
+    "name": "me/zero/alpine/listener/EventHandler",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "me/zero/alpine/listener/Listener": {
+    "name": "me/zero/alpine/listener/Listener",
+    "interfaces": [
+      "me/zero/alpine/listener/EventHook"
+    ]
+  },
+  "org/json/simple/JSONArray": {
+    "name": "org/json/simple/JSONArray",
+    "interfaces": [
+      "java/util/List",
+      "org/json/simple/JSONAware",
+      "org/json/simple/JSONStreamAware"
+    ]
+  },
+  "org/json/simple/JSONObject": {
+    "name": "org/json/simple/JSONObject",
+    "interfaces": [
+      "java/util/Map",
+      "org/json/simple/JSONAware",
+      "org/json/simple/JSONStreamAware"
+    ]
+  },
+  "org/spongepowered/asm/bridge/RemapperAdapter": {
+    "name": "org/spongepowered/asm/bridge/RemapperAdapter",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/extensibility/IRemapper",
+      "org/spongepowered/asm/util/ObfuscationUtil$IClassRemapper"
+    ]
+  },
+  "org/spongepowered/asm/launch/MixinTweaker": {
+    "name": "org/spongepowered/asm/launch/MixinTweaker",
+    "interfaces": [
+      "net/minecraft/launchwrapper/ITweaker"
+    ]
+  },
+  "org/spongepowered/asm/launch/platform/MixinPlatformAgentAbstract": {
+    "name": "org/spongepowered/asm/launch/platform/MixinPlatformAgentAbstract",
+    "interfaces": [
+      "org/spongepowered/asm/launch/platform/IMixinPlatformAgent"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/InsnList$InsnListIterator": {
+    "name": "org/spongepowered/asm/lib/tree/InsnList$InsnListIterator",
+    "interfaces": [
+      "java/util/ListIterator"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/analysis/Analyzer": {
+    "name": "org/spongepowered/asm/lib/tree/analysis/Analyzer",
+    "interfaces": [
+      "org/spongepowered/asm/lib/Opcodes"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/analysis/BasicInterpreter": {
+    "name": "org/spongepowered/asm/lib/tree/analysis/BasicInterpreter",
+    "interfaces": [
+      "org/spongepowered/asm/lib/Opcodes"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/analysis/BasicValue": {
+    "name": "org/spongepowered/asm/lib/tree/analysis/BasicValue",
+    "interfaces": [
+      "org/spongepowered/asm/lib/tree/analysis/Value"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/analysis/SmallSet": {
+    "name": "org/spongepowered/asm/lib/tree/analysis/SmallSet",
+    "interfaces": [
+      "java/util/Iterator"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/analysis/SourceInterpreter": {
+    "name": "org/spongepowered/asm/lib/tree/analysis/SourceInterpreter",
+    "interfaces": [
+      "org/spongepowered/asm/lib/Opcodes"
+    ]
+  },
+  "org/spongepowered/asm/lib/tree/analysis/SourceValue": {
+    "name": "org/spongepowered/asm/lib/tree/analysis/SourceValue",
+    "interfaces": [
+      "org/spongepowered/asm/lib/tree/analysis/Value"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Debug": {
+    "name": "org/spongepowered/asm/mixin/Debug",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Dynamic": {
+    "name": "org/spongepowered/asm/mixin/Dynamic",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/EnvironmentStateTweaker": {
+    "name": "org/spongepowered/asm/mixin/EnvironmentStateTweaker",
+    "interfaces": [
+      "net/minecraft/launchwrapper/ITweaker"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Final": {
+    "name": "org/spongepowered/asm/mixin/Final",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Implements": {
+    "name": "org/spongepowered/asm/mixin/Implements",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Interface": {
+    "name": "org/spongepowered/asm/mixin/Interface",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Intrinsic": {
+    "name": "org/spongepowered/asm/mixin/Intrinsic",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Mixin": {
+    "name": "org/spongepowered/asm/mixin/Mixin",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/MixinEnvironment": {
+    "name": "org/spongepowered/asm/mixin/MixinEnvironment",
+    "interfaces": [
+      "org/spongepowered/asm/util/ITokenProvider"
+    ]
+  },
+  "org/spongepowered/asm/mixin/MixinEnvironment$TokenProviderWrapper": {
+    "name": "org/spongepowered/asm/mixin/MixinEnvironment$TokenProviderWrapper",
+    "interfaces": [
+      "java/lang/Comparable"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Mutable": {
+    "name": "org/spongepowered/asm/mixin/Mutable",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Overwrite": {
+    "name": "org/spongepowered/asm/mixin/Overwrite",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Pseudo": {
+    "name": "org/spongepowered/asm/mixin/Pseudo",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Shadow": {
+    "name": "org/spongepowered/asm/mixin/Shadow",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/SoftOverride": {
+    "name": "org/spongepowered/asm/mixin/SoftOverride",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/Unique": {
+    "name": "org/spongepowered/asm/mixin/Unique",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/gen/Accessor": {
+    "name": "org/spongepowered/asm/mixin/gen/Accessor",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/gen/Invoker": {
+    "name": "org/spongepowered/asm/mixin/gen/Invoker",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/At": {
+    "name": "org/spongepowered/asm/mixin/injection/At",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Coerce": {
+    "name": "org/spongepowered/asm/mixin/injection/Coerce",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Constant": {
+    "name": "org/spongepowered/asm/mixin/injection/Constant",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Group": {
+    "name": "org/spongepowered/asm/mixin/injection/Group",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Inject": {
+    "name": "org/spongepowered/asm/mixin/injection/Inject",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/InjectionPoint$AtCode": {
+    "name": "org/spongepowered/asm/mixin/injection/InjectionPoint$AtCode",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/ModifyArg": {
+    "name": "org/spongepowered/asm/mixin/injection/ModifyArg",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/ModifyArgs": {
+    "name": "org/spongepowered/asm/mixin/injection/ModifyArgs",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/ModifyConstant": {
+    "name": "org/spongepowered/asm/mixin/injection/ModifyConstant",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/ModifyVariable": {
+    "name": "org/spongepowered/asm/mixin/injection/ModifyVariable",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Redirect": {
+    "name": "org/spongepowered/asm/mixin/injection/Redirect",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Slice": {
+    "name": "org/spongepowered/asm/mixin/injection/Slice",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/Surrogate": {
+    "name": "org/spongepowered/asm/mixin/injection/Surrogate",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/callback/CallbackInfo": {
+    "name": "org/spongepowered/asm/mixin/injection/callback/CallbackInfo",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/injection/callback/Cancellable"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/code/ISliceContext": {
+    "name": "org/spongepowered/asm/mixin/injection/code/ISliceContext",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/injection/IInjectionPointContext"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/code/MethodSlice$InsnListSlice$SliceIterator": {
+    "name": "org/spongepowered/asm/mixin/injection/code/MethodSlice$InsnListSlice$SliceIterator",
+    "interfaces": [
+      "java/util/ListIterator"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/invoke/arg/ArgsClassGenerator": {
+    "name": "org/spongepowered/asm/mixin/injection/invoke/arg/ArgsClassGenerator",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IClassGenerator"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/modify/AfterStoreLocal": {
+    "name": "org/spongepowered/asm/mixin/injection/modify/AfterStoreLocal",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/modify/AfterStoreLocal",
+        "value": {
+          "value": "STORE"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/modify/BeforeLoadLocal": {
+    "name": "org/spongepowered/asm/mixin/injection/modify/BeforeLoadLocal",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/modify/BeforeLoadLocal",
+        "value": {
+          "value": "LOAD"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/modify/LocalVariableDiscriminator$Context": {
+    "name": "org/spongepowered/asm/mixin/injection/modify/LocalVariableDiscriminator$Context",
+    "interfaces": [
+      "org/spongepowered/asm/util/PrettyPrinter$IPrettyPrintable"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/AfterInvoke": {
+    "name": "org/spongepowered/asm/mixin/injection/points/AfterInvoke",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/AfterInvoke",
+        "value": {
+          "value": "INVOKE_ASSIGN"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeConstant": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeConstant",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeConstant",
+        "value": {
+          "value": "CONSTANT"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeFieldAccess": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeFieldAccess",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeFieldAccess",
+        "value": {
+          "value": "FIELD"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeFinalReturn": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeFinalReturn",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeFinalReturn",
+        "value": {
+          "value": "TAIL"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeInvoke": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeInvoke",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeInvoke",
+        "value": {
+          "value": "INVOKE"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeNew": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeNew",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeNew",
+        "value": {
+          "value": "NEW"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeReturn": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeReturn",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeReturn",
+        "value": {
+          "value": "RETURN"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/BeforeStringInvoke": {
+    "name": "org/spongepowered/asm/mixin/injection/points/BeforeStringInvoke",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/BeforeStringInvoke",
+        "value": {
+          "value": "INVOKE_STRING"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/JumpInsnPoint": {
+    "name": "org/spongepowered/asm/mixin/injection/points/JumpInsnPoint",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/JumpInsnPoint",
+        "value": {
+          "value": "JUMP"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/points/MethodHead": {
+    "name": "org/spongepowered/asm/mixin/injection/points/MethodHead",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lorg/spongepowered/asm/mixin/injection/InjectionPoint$AtCode;",
+        "target": "org/spongepowered/asm/mixin/injection/points/MethodHead",
+        "value": {
+          "value": "HEAD"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/struct/InjectionInfo": {
+    "name": "org/spongepowered/asm/mixin/injection/struct/InjectionInfo",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/injection/code/ISliceContext"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode": {
+    "name": "org/spongepowered/asm/mixin/injection/struct/InjectionNodes$InjectionNode",
+    "interfaces": [
+      "java/lang/Comparable"
+    ]
+  },
+  "org/spongepowered/asm/mixin/injection/struct/Target": {
+    "name": "org/spongepowered/asm/mixin/injection/struct/Target",
+    "interfaces": [
+      "java/lang/Comparable",
+      "java/lang/Iterable"
+    ]
+  },
+  "org/spongepowered/asm/mixin/refmap/ReferenceMapper": {
+    "name": "org/spongepowered/asm/mixin/refmap/ReferenceMapper",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/refmap/IReferenceMapper",
+      "java/io/Serializable"
+    ]
+  },
+  "org/spongepowered/asm/mixin/refmap/RemappingReferenceMapper": {
+    "name": "org/spongepowered/asm/mixin/refmap/RemappingReferenceMapper",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/refmap/IReferenceMapper"
+    ]
+  },
+  "org/spongepowered/asm/mixin/refmap/RemappingReferenceMapper$1": {
+    "name": "org/spongepowered/asm/mixin/refmap/RemappingReferenceMapper$1",
+    "interfaces": [
+      "com/google/common/io/LineProcessor"
+    ]
+  },
+  "org/spongepowered/asm/mixin/struct/SpecialMethodInfo": {
+    "name": "org/spongepowered/asm/mixin/struct/SpecialMethodInfo",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/injection/IInjectionPointContext"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/InnerClassGenerator": {
+    "name": "org/spongepowered/asm/mixin/transformer/InnerClassGenerator",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IClassGenerator"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinConfig": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinConfig",
+    "interfaces": [
+      "java/lang/Comparable",
+      "org/spongepowered/asm/mixin/extensibility/IMixinConfig"
+    ],
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "selector",
+        "value": {
+          "value": "target"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "version",
+        "value": {
+          "value": "minVersion"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "compatibility",
+        "value": {
+          "value": "compatibilityLevel"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "required",
+        "value": {
+          "value": "required"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "priority",
+        "value": {
+          "value": "priority"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "mixinPriority",
+        "value": {
+          "value": "mixinPriority"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "mixinPackage",
+        "value": {
+          "value": "package"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "mixinClasses",
+        "value": {
+          "value": "mixins"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "mixinClassesClient",
+        "value": {
+          "value": "client"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "mixinClassesServer",
+        "value": {
+          "value": "server"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "setSourceFile",
+        "value": {
+          "value": "setSourceFile"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "refMapperConfig",
+        "value": {
+          "value": "refmap"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "verboseLogging",
+        "value": {
+          "value": "verbose"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "pluginClassName",
+        "value": {
+          "value": "plugin"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "injectorOptions",
+        "value": {
+          "value": "injectors"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "overwriteOptions",
+        "value": {
+          "value": "overwrites"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinConfig$InjectorOptions": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinConfig$InjectorOptions",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "defaultRequireValue",
+        "value": {
+          "value": "defaultRequire"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "defaultGroup",
+        "value": {
+          "value": "defaultGroup"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "injectionPoints",
+        "value": {
+          "value": "injectionPoints"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "maxShiftBy",
+        "value": {
+          "value": "maxShiftBy"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinConfig$OverwriteOptions": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinConfig$OverwriteOptions",
+    "annotations": [
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "conformAccessModifiers",
+        "value": {
+          "value": "conformVisibility"
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lcom/google/gson/annotations/SerializedName;",
+        "target": "requireOverwriteAnnotations",
+        "value": {
+          "value": "requireAnnotations"
+        }
+      }
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinInfo": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinInfo",
+    "interfaces": [
+      "java/lang/Comparable",
+      "org/spongepowered/asm/mixin/extensibility/IMixinInfo"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinInfo$1": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinInfo$1",
+    "interfaces": [
+      "com/google/common/base/Function"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinInfo$2": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinInfo$2",
+    "interfaces": [
+      "com/google/common/base/Function"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinPostProcessor": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinPostProcessor",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/MixinConfig$IListener"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinTargetContext": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinTargetContext",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/refmap/IMixinContext"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/MixinTransformer$1": {
+    "name": "org/spongepowered/asm/mixin/transformer/MixinTransformer$1",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/MixinConfig$IListener"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/Proxy": {
+    "name": "org/spongepowered/asm/mixin/transformer/Proxy",
+    "interfaces": [
+      "net/minecraft/launchwrapper/IClassTransformer",
+      "org/spongepowered/asm/service/ILegacyClassTransformer"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/TargetClassContext": {
+    "name": "org/spongepowered/asm/mixin/transformer/TargetClassContext",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/ITargetClassContext"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/debug/RuntimeDecompiler": {
+    "name": "org/spongepowered/asm/mixin/transformer/debug/RuntimeDecompiler",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IDecompiler",
+      "org/jetbrains/java/decompiler/main/extern/IResultSaver"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/debug/RuntimeDecompiler$1": {
+    "name": "org/spongepowered/asm/mixin/transformer/debug/RuntimeDecompiler$1",
+    "interfaces": [
+      "org/jetbrains/java/decompiler/main/extern/IBytecodeProvider"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/debug/RuntimeDecompilerAsync": {
+    "name": "org/spongepowered/asm/mixin/transformer/debug/RuntimeDecompilerAsync",
+    "interfaces": [
+      "java/lang/Runnable",
+      "java/lang/Thread$UncaughtExceptionHandler"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/ext/extensions/ExtensionCheckClass": {
+    "name": "org/spongepowered/asm/mixin/transformer/ext/extensions/ExtensionCheckClass",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IExtension"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/ext/extensions/ExtensionCheckInterfaces": {
+    "name": "org/spongepowered/asm/mixin/transformer/ext/extensions/ExtensionCheckInterfaces",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IExtension"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/ext/extensions/ExtensionClassExporter": {
+    "name": "org/spongepowered/asm/mixin/transformer/ext/extensions/ExtensionClassExporter",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IExtension"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/meta/MixinInner": {
+    "name": "org/spongepowered/asm/mixin/transformer/meta/MixinInner",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/meta/MixinMerged": {
+    "name": "org/spongepowered/asm/mixin/transformer/meta/MixinMerged",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/mixin/transformer/meta/MixinRenamed": {
+    "name": "org/spongepowered/asm/mixin/transformer/meta/MixinRenamed",
+    "interfaces": [
+      "java/lang/annotation/Annotation"
+    ]
+  },
+  "org/spongepowered/asm/obfuscation/RemapperChain": {
+    "name": "org/spongepowered/asm/obfuscation/RemapperChain",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/extensibility/IRemapper"
+    ]
+  },
+  "org/spongepowered/asm/obfuscation/mapping/common/MappingField": {
+    "name": "org/spongepowered/asm/obfuscation/mapping/common/MappingField",
+    "interfaces": [
+      "org/spongepowered/asm/obfuscation/mapping/IMapping"
+    ]
+  },
+  "org/spongepowered/asm/obfuscation/mapping/common/MappingMethod": {
+    "name": "org/spongepowered/asm/obfuscation/mapping/common/MappingMethod",
+    "interfaces": [
+      "org/spongepowered/asm/obfuscation/mapping/IMapping"
+    ]
+  },
+  "org/spongepowered/asm/service/ILegacyClassTransformer": {
+    "name": "org/spongepowered/asm/service/ILegacyClassTransformer",
+    "interfaces": [
+      "org/spongepowered/asm/service/ITransformer"
+    ]
+  },
+  "org/spongepowered/asm/service/mojang/Blackboard": {
+    "name": "org/spongepowered/asm/service/mojang/Blackboard",
+    "interfaces": [
+      "org/spongepowered/asm/service/IGlobalPropertyService"
+    ]
+  },
+  "org/spongepowered/asm/service/mojang/LegacyTransformerHandle": {
+    "name": "org/spongepowered/asm/service/mojang/LegacyTransformerHandle",
+    "interfaces": [
+      "org/spongepowered/asm/service/ILegacyClassTransformer"
+    ]
+  },
+  "org/spongepowered/asm/service/mojang/MixinServiceLaunchWrapper": {
+    "name": "org/spongepowered/asm/service/mojang/MixinServiceLaunchWrapper",
+    "interfaces": [
+      "org/spongepowered/asm/service/IMixinService",
+      "org/spongepowered/asm/service/IClassProvider",
+      "org/spongepowered/asm/service/IClassBytecodeProvider"
+    ]
+  },
+  "org/spongepowered/asm/service/mojang/MixinServiceLaunchWrapperBootstrap": {
+    "name": "org/spongepowered/asm/service/mojang/MixinServiceLaunchWrapperBootstrap",
+    "interfaces": [
+      "org/spongepowered/asm/service/IMixinServiceBootstrap"
+    ]
+  },
+  "org/spongepowered/asm/transformers/TreeTransformer": {
+    "name": "org/spongepowered/asm/transformers/TreeTransformer",
+    "interfaces": [
+      "org/spongepowered/asm/service/ILegacyClassTransformer"
+    ]
+  },
+  "org/spongepowered/asm/util/Annotations$1": {
+    "name": "org/spongepowered/asm/util/Annotations$1",
+    "interfaces": [
+      "com/google/common/base/Function"
+    ]
+  },
+  "org/spongepowered/asm/util/ClassSignature$Token": {
+    "name": "org/spongepowered/asm/util/ClassSignature$Token",
+    "interfaces": [
+      "org/spongepowered/asm/util/ClassSignature$IToken"
+    ]
+  },
+  "org/spongepowered/asm/util/ClassSignature$TokenHandle": {
+    "name": "org/spongepowered/asm/util/ClassSignature$TokenHandle",
+    "interfaces": [
+      "org/spongepowered/asm/util/ClassSignature$IToken"
+    ]
+  },
+  "org/spongepowered/asm/util/ClassSignature$TypeVar": {
+    "name": "org/spongepowered/asm/util/ClassSignature$TypeVar",
+    "interfaces": [
+      "java/lang/Comparable"
+    ]
+  },
+  "org/spongepowered/asm/util/PrettyPrinter$HorizontalRule": {
+    "name": "org/spongepowered/asm/util/PrettyPrinter$HorizontalRule",
+    "interfaces": [
+      "org/spongepowered/asm/util/PrettyPrinter$ISpecialEntry"
+    ]
+  },
+  "org/spongepowered/asm/util/PrettyPrinter$KeyValue": {
+    "name": "org/spongepowered/asm/util/PrettyPrinter$KeyValue",
+    "interfaces": [
+      "org/spongepowered/asm/util/PrettyPrinter$IVariableWidthEntry"
+    ]
+  },
+  "org/spongepowered/asm/util/PrettyPrinter$Row": {
+    "name": "org/spongepowered/asm/util/PrettyPrinter$Row",
+    "interfaces": [
+      "org/spongepowered/asm/util/PrettyPrinter$IVariableWidthEntry"
+    ]
+  },
+  "org/spongepowered/asm/util/PrettyPrinter$Table": {
+    "name": "org/spongepowered/asm/util/PrettyPrinter$Table",
+    "interfaces": [
+      "org/spongepowered/asm/util/PrettyPrinter$IVariableWidthEntry"
+    ]
+  },
+  "org/spongepowered/asm/util/VersionNumber": {
+    "name": "org/spongepowered/asm/util/VersionNumber",
+    "interfaces": [
+      "java/lang/Comparable",
+      "java/io/Serializable"
+    ]
+  },
+  "org/spongepowered/tools/agent/MixinAgent": {
+    "name": "org/spongepowered/tools/agent/MixinAgent",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/transformer/ext/IHotSwap"
+    ]
+  },
+  "org/spongepowered/tools/agent/MixinAgent$Transformer": {
+    "name": "org/spongepowered/tools/agent/MixinAgent$Transformer",
+    "interfaces": [
+      "java/lang/instrument/ClassFileTransformer"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/AnnotatedMixinElementHandlerAccessor": {
+    "name": "org/spongepowered/tools/obfuscation/AnnotatedMixinElementHandlerAccessor",
+    "interfaces": [
+      "org/spongepowered/asm/mixin/refmap/IMixinContext"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/AnnotatedMixins": {
+    "name": "org/spongepowered/tools/obfuscation/AnnotatedMixins",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/interfaces/IMixinAnnotationProcessor",
+      "org/spongepowered/asm/util/ITokenProvider",
+      "org/spongepowered/tools/obfuscation/interfaces/ITypeHandleProvider",
+      "org/spongepowered/tools/obfuscation/interfaces/IJavadocProvider"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/Mappings": {
+    "name": "org/spongepowered/tools/obfuscation/Mappings",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/mapping/IMappingConsumer"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/Mappings$UniqueMappings": {
+    "name": "org/spongepowered/tools/obfuscation/Mappings$UniqueMappings",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/mapping/IMappingConsumer"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/MixinValidator": {
+    "name": "org/spongepowered/tools/obfuscation/MixinValidator",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/interfaces/IMixinValidator"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/ObfuscationData": {
+    "name": "org/spongepowered/tools/obfuscation/ObfuscationData",
+    "interfaces": [
+      "java/lang/Iterable"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/ObfuscationDataProvider": {
+    "name": "org/spongepowered/tools/obfuscation/ObfuscationDataProvider",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/interfaces/IObfuscationDataProvider"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/ObfuscationEnvironment": {
+    "name": "org/spongepowered/tools/obfuscation/ObfuscationEnvironment",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/interfaces/IObfuscationEnvironment"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/ObfuscationEnvironment$RemapperProxy": {
+    "name": "org/spongepowered/tools/obfuscation/ObfuscationEnvironment$RemapperProxy",
+    "interfaces": [
+      "org/spongepowered/asm/util/ObfuscationUtil$IClassRemapper"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/ObfuscationManager": {
+    "name": "org/spongepowered/tools/obfuscation/ObfuscationManager",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/interfaces/IObfuscationManager"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/ReferenceManager": {
+    "name": "org/spongepowered/tools/obfuscation/ReferenceManager",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/interfaces/IReferenceManager"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/interfaces/IMixinAnnotationProcessor": {
+    "name": "org/spongepowered/tools/obfuscation/interfaces/IMixinAnnotationProcessor",
+    "interfaces": [
+      "javax/annotation/processing/Messager",
+      "org/spongepowered/tools/obfuscation/interfaces/IOptionProvider"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/mapping/common/MappingProvider": {
+    "name": "org/spongepowered/tools/obfuscation/mapping/common/MappingProvider",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/mapping/IMappingProvider"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/mapping/common/MappingWriter": {
+    "name": "org/spongepowered/tools/obfuscation/mapping/common/MappingWriter",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/mapping/IMappingWriter"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/mapping/mcp/MappingProviderSrg$1": {
+    "name": "org/spongepowered/tools/obfuscation/mapping/mcp/MappingProviderSrg$1",
+    "interfaces": [
+      "com/google/common/io/LineProcessor"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/mcp/ObfuscationServiceMCP": {
+    "name": "org/spongepowered/tools/obfuscation/mcp/ObfuscationServiceMCP",
+    "interfaces": [
+      "org/spongepowered/tools/obfuscation/service/IObfuscationService"
+    ]
+  },
+  "org/spongepowered/tools/obfuscation/mirror/TypeReference": {
+    "name": "org/spongepowered/tools/obfuscation/mirror/TypeReference",
+    "interfaces": [
+      "java/io/Serializable",
+      "java/lang/Comparable"
+    ]
+  }
+}

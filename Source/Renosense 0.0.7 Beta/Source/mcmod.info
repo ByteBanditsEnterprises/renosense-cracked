@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "renosense",
+    "name": "RenoSense",
+    "description": "Minecraft Hack for 2b2t.org",
+    "version": "0.0.7",
+    "mcversion": "1.12.2",
+    "url": "https://discord.gg/renosense",
+    "updateUrl": "",
+    "authorList": ["Sjnez"],
+    "credits": "That boy scott got NO GAME",
+    "logoFile": "assets/minecraft/textures/renosense.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
