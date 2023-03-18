@@ -38,7 +38,8 @@ XeonLyfe - reversing the shit client and cracking + cleaning it
 </div>
 
 <div align="center">
-# [Potential Affected User List] 
+
+# [ Potential Affected User List ] 
 
 A list of 56 users that have user or other roles pertaining to getting access to the client throught the discord.
 
