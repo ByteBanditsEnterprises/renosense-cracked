@@ -10,6 +10,8 @@ security sucks ass, get a bigger brain
 shit pasted rat with BTC miner in it
 
 rat has been removed in clean version, pastebins reported, and webhooks nuked.
+  
++ Not 100% sure if this is the real one, its the one thats been being passed around by the users. They claim it is from the server and is the original though.
 
 </div>
 
