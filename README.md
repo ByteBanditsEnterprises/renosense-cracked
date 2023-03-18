@@ -9,7 +9,7 @@ shit pasted rat with BTC miner in it
 
 rat has been removed in clean version, pastebins reported, and webhooks nuked.
   
-# THIS IS NOT THE ORIGINAL JAR, Rendicle#3571 has been posting this around. It is the real client code, but the rat was added
+# THIS IS NOT THE ORIGINAL JAR, Rendicle#3571 has been posting this around. It is the real client code, but the rat was added by Rendickle
 </div>
 
 <div align="center">
